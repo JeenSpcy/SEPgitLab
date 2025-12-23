@@ -25,7 +25,7 @@ class Simple_drawing_window2(Simple_drawing_window):
 
 def main():
     app = QApplication(sys.argv)
-    w = Simple_drawing_window()
+    w = Simple_drawing_window2()
     w.show()
     sys.exit(app.exec())
 
