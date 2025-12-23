@@ -12,8 +12,10 @@ class Simple_drawing_window(QWidget):
         pass
 
 class Simple_drawing_window2(Simple_drawing_window):
-    def init(self):
-        super().init("Jeen")
+    def __init__(self):
+        QWidget.__init__(self, None)
+        self.setWindowTitle("Jeen")
+
 
     def paintEvent(self, e):
         p = QPainter(self)
